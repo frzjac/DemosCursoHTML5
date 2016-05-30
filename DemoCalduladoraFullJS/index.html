@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora HTML</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>	
+	<section id="container">
+	<h1>Calculadora Basica en HTML</h1>
+		<div class="bloque" id="operaciones">
+			<p>
+					<input type="text"  id="entrada" placeholder="0">
+			</p>			 
+			<p>
+				<input type="button" id="btn_7" value="7" onclick="entrada('7')">
+				<input type="button" id="btn_8" value="8" onclick="entrada('8')">
+				<input type="button" id="btn_9" value="9"onclick="entrada('9')">
+				<input type="button" id="div" value="/" onclick="operacion('div')">
+			</p>
+			<p>
+				<input type="button" id="btn_4" value="4" onclick="entrada('4')">
+				<input type="button" id="btn_5" value="5" onclick="entrada('5')">
+				<input type="button" id="btn_6" value="6"onclick="entrada('6')">
+				<input type="button" id="mult" value="*" onclick="operacion('mult')">
+			</p>
+			<p>
+				<input type="button" id="btn_1" value="1" onclick="entrada('1')">
+				<input type="button" id="btn_2" value="2" onclick="entrada('2')">
+				<input type="button" id="btn_3" value="3" onclick="entrada('3')">
+				<input type="button" id="res" value="-" onclick="operacion('resta')">
+			</p>
+			<p>
+				<input type="button" id="btn_0" value="0">
+				<input type="button" id="btn_igual" value="=" onclick="resultado()">
+				<input type="button" id="suma" value="+" onclick="operacion('suma')">
+				<input type="button" id="borrar" value="ce" onclick="borrar()">
+			</p>
+		</div>		
+	</section>
+
+	<script src="main.js"></script>
+</body>
+</html>
